@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "mo",
+	"version": "${version}",
+	"name": "mo",
+	"description": "This is an example description! Tell everyone what your mod is about! /will write it later....",
+	"authors": [
+		"@uniquepersun"
+	],
+	"contact": {
+		"homepage": "https://github.com/uniquepersun",
+		"sources": "https://github.com/uniquepersun/mo"
+	},
+	"license": "MIT",
+	"icon": "assets/mo/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"co.uniquepersun.mo.Mo"
+		],
+		"fabric-datagen": [
+			"co.uniquepersun.mo.MoDataGenerator"
+		],
+		"client":[
+			"co.uniquepersun.mo.moClient"
+		]
+	},
+	"mixins": [
+		"mo.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
